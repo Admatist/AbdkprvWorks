@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Адольф",
+        "group": "SEAL",
+        "gpa": 4.5
+    },
+    {
+        "name": "Гитлер",
+        "group": "Air Force",
+        "gpa": 5.0
+    }
+]
