@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Менеджер Расходов</title>
+  <style>
+    /* Простейшие стили для формы и списка */
+    .expense-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <h2>💸 Менеджер Расходов</h2>
+
+  <form id="expenseForm">
+    <input type="text" id="descriptionInput" placeholder="Описание расхода" required>
+    <input type="number" id="amountInput" placeholder="Сумма" required min="0.01" step="0.01">
+    <select id="categoryInput">
+        <option value="Food">Еда</option>
+        <option value="Transport">Транспорт</option>
+        <option value="Other">Другое</option>
+    </select>
+    <button type="submit">Добавить Расход</button>
+  </form>
+
+  <hr>
+
+  <h3>Фильтр</h3>
+  <input type="text" id="filterInput" placeholder="Найти по описанию...">
+
+  <h3>Список Расходов</h3>
+  <ul id="expenseList">
+    </ul>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
